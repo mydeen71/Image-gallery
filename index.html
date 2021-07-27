@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, intial-scale=1.0">
+	<title>Choose your holiday destination </title>
+	<link rel="stylesheet" href="style.css">
+
+</head>
+	<body>
+		<h1>Click your destination</h1>
+		<div class="full-img" id="fullImgBox">
+			<img src="images/img (1).jpg" id="fullImg">
+			<span onClick="closeFullImg()">X</span>
+		</div>
+		<div class="img-gallery">
+			<img src="images/img (1).jpg" onClick="openFullImg(this.src)">
+			<img src="images/img (2).jpg"  onClick="openFullImg(this.src)">
+			<img src="images/img (3).jpg"  onClick="openFullImg(this.src)">
+			<img src="images/img (4).jpg"  onClick="openFullImg(this.src)">
+			<img src="images/img (5).jpg"  onClick="openFullImg(this.src)">
+			<img src="images/img (6).jpg"  onClick="openFullImg(this.src)">
+			<img src="images/img (7).jpg"  onClick="openFullImg(this.src)">
+			<img src="images/img (8).jpg"   onClick="openFullImg(this.src)">
+		</div>
+
+		<script>
+
+			var fullImgBox =document.getElementById("fullImgBox");
+			var fullImg= document.getElementById("fullImg");
+
+			function openFullImg(pic){
+				fullImgBox.style.display="flex";
+				fullImg.src=pic;
+			}
+			function closeFullImg(){
+				fullImgBox.style.display="none";
+			}
+		</script>
+	
+	</body>
+</html>
